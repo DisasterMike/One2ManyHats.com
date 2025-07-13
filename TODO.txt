@@ -1,0 +1,28 @@
+- clone the old webiste repo to have the code open and compare/copy code
+
+- install express and ejs
+- set up git repo
+- gitignore
+- set up folder structure
+
+
+
+(maybe)
+- set up ruby on this mac and clone prev project??
+
+- set up main server page
+
+- create homepage
+    - create navbar component and use ejs to insert
+    - use express/ejs to insert into html page like before
+
+- web and game pages
+    - source images from prev
+    - 
+
+
+
+
+
+Packages worth downloading
+- dayjs

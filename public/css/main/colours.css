@@ -1,0 +1,10 @@
+:root{
+    --black: rgb(15, 15, 15);
+    --black-rgb: 15, 15, 15;
+    --white-text: #f7f7f7;
+    --link-hover: rgb(79, 119, 150);
+    --highlight: #FCBA28;
+    --grey: #c7c7c7;
+    --grey-back: linear-gradient(46deg, #d8d8d8e3, #fdfdfde3);
+    --trans-white: #ffffffeb;
+  }
