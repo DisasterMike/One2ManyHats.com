@@ -1,63 +1,55 @@
-body{
+body {
     background-color: var(--black);
     color: var(--white-text);
-    font-family: var(--body-font);
-  }
-  
-  .flex-box{
-    display: flex;
-  }
-  
-  .d-flex-column{
-    flex-direction: column;
-  }
-  
-  .f-justify-center{
-    justify-content: center;
-  }
-  
-  .f-justify-end{
-    justify-content: end;
-  }
-  
-  .f-align-center{
-    align-items: center;
-  }
-  
-  .f-align-end{
-    align-items: end;
-  }
-  
-  .f-space-around{
-    justify-content: space-around;
-  }
-  
-  .f-between{
-    justify-content: space-between;
-  }
-  
-  .box-shadow{
-    box-shadow: 0 0 20px 0px #00000057;
-  }
-  
-  
-  body{
-    background-image: url("LogoWithoutName.png");
+    /* font-family: var(--body-font); */
+
+    /* background-image: url("LogoWithoutName.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 500px;
-  }
-  
-  body::-webkit-scrollbar {
+    background-size: 500px; */
+}
+ 
+
+/* flexbox related styles */
+.flex-box{
+    display: flex;
+}
+.d-flex-column{
+    flex-direction: column;
+}
+.f-justify-center{
+    justify-content: center;
+}
+.f-justify-end{
+    justify-content: end;
+}
+.f-align-center{
+    align-items: center;
+}
+.f-align-end{
+    align-items: end;
+}
+.f-space-around{
+    justify-content: space-around;
+}
+.f-between{
+    justify-content: space-between;
+}
+
+.box-shadow{
+    box-shadow: 0 0 20px 0px #00000057;
+}
+
+body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: var(--white-text);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--black);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-  }
+}

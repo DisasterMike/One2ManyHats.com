@@ -7,11 +7,40 @@
     <title>Home</title>
 </head>
 <body>
-    <!-- add navbar component here using templating system of my own -->
-     {{navbar}}
-    <h1>Hello Michael</h1>
+    {{navbar}}
+    <!-- Banner Section -->
+    <div data-controller="logo-letters" class="banner">
+        <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
+          <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 130px">
+            <div class="banner-logo flex-box f-align-end">
+              <div class="hello-text flex-box f-justify-center f-align-center">
+                <!-- <h3>👇🏻 <%= t("logo-click-me") %></h3> -->
+                <h3>👇🏻 Logo here</h3>
+                </div>
+                <!-- <%= render "core/logo_banner" %> -->
+                {{banner}}
+            </div>
+            <div class="scroll-down-arrow" style="position: relative;">
+              <!-- <%= link_to "#about" do %>
+                <i class="fa-solid fa-angle-down"></i>
+              <% end %> -->
+            </div>
+          </div>
+          <!-- <%= render "core/home_marquee" %> -->
+        </div>
+    </div>    
 
-    <!-- add footer component here using templating system of my own -->
-     {{footer}}
+    <!-- Profile Section -->
+
+
+
+    <!-- Contact Section -->
+    {{footer}}
+    <script>
+        // remove the home nav icon when on the home page
+        const homeNavIcon = document.querySelector('.nav-home')
+        // homeNavIcon.style.display = 'none'
+        homeNavIcon.remove()
+    </script>
 </body>
 </html>

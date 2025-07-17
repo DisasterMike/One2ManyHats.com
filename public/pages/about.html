@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Me</title>
+</head>
+<body>
+    {{navbar}}
+    <h1>About Me Page</h1>
+    {{footer}}
+    <script>
+        // remove the about nav icon when on the home page
+        const homeNavIcon = document.querySelector('.nav-about')
+        homeNavIcon.remove()
+    </script>
+</body>
+</html>
