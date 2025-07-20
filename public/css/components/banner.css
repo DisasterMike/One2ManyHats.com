@@ -1,0 +1,202 @@
+.banner{
+    /* need to fix this vh as it causes problems! */
+    /* height: 90vh; */
+    height: 750px;
+    /* height: 100vh; */
+    /* height: 100dvh; */
+    /* height: 100lvh; */
+    background-color: var(--black);
+}
+
+.banner-logo{
+    position: relative;
+}
+
+.b-letter{
+    font-size: 6.2rem;
+    transition: all 0.6s;
+    -webkit-transition: all 0.3s;
+    font-family: var(--logo-font);
+    margin: 0;
+    bottom: 0px;
+}
+
+/* dont make transparent, make it black colour so it sits over the logo */
+.b-letter.static{
+    /* -webkit-text-fill-color: transparent; */
+    position: absolute;
+    -webkit-text-fill-color: var(--black);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+}
+
+.b-letter.moving{
+    position: absolute;
+    z-index: 1;
+}
+
+.l1 {
+    left: 7px;
+}
+.l1-u {
+    left: 7px;
+}
+.l2{
+    left: 73px;
+}
+.l2-u {
+    left: 73px;
+}
+.l3{
+    left: 127px;
+}
+.l3-u {
+    left: 127px;
+}
+.l4{
+    bottom: -1px;
+}
+.l4-u{
+    bottom: -1px;
+}
+.l5{
+    left: 84px;
+}
+.l5-u{
+    left: 84px;
+}
+.l6{
+    left: 135px;
+    bottom: -1px;
+}
+.l6-u{
+    left: 135px;
+    bottom: -1px;
+}
+.l7{
+    left: 189px;
+    bottom: -1px;
+}
+.l7-u{
+    left: 189px;
+    bottom: -1px;
+}
+.l8{
+    left: 237px;
+}
+.l8-u{
+    left: 237px;
+}
+.l9{
+    left: 304px;
+}
+.l9-u{
+    left: 304px;
+}
+.l10{
+    left: 354px;
+}
+.l10-u{
+    left: 354px;
+}
+.l11{
+    left: 385px;
+}
+.l11-u {
+    left: 385px;
+}
+
+
+.b-letter.moving:hover{
+    color: transparent;
+    text-shadow: 5px -5px 0px rgb(255, 255, 255);
+}
+.l1:hover{
+    text-shadow: 5px -5px 0px green;
+}
+.l2:hover{
+    text-shadow: 5px -5px 0px yellow;
+}
+.l3:hover{
+    text-shadow: 5px -5px 0px rgb(226, 10, 10);
+}
+.l4:hover{
+    text-shadow: 5px -5px 0px lightblue;
+}
+.l5:hover{
+    text-shadow: 5px -5px 0px orange;
+}
+.l6:hover{
+    text-shadow: 5px -5px 0px purple;
+}
+.l7:hover{
+    text-shadow: 5px -5px 0px pink;
+}
+.l8:hover{
+    text-shadow: 5px -5px 0px rgb(10, 10, 231);
+}
+.l9:hover{
+    text-shadow: 5px -5px 0px lightgoldenrodyellow;
+}
+.l10:hover{
+    text-shadow: 5px -5px 0px lightcyan;
+}
+.l11:hover{
+    text-shadow: 5px -5px 0px lightsalmon;
+}
+.b-letter.moving:hover{
+    color: transparent;
+    text-shadow: 5px -5px 0px var(--highlight);
+}
+.banner-logo .letter-buttons{
+    position: absolute;
+    color: transparent;
+    text-shadow: 5px -5px 0px rgb(255, 255, 255);
+}
+.banner-logo .letter-buttons:hover{
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.b-left-words{
+    /* position: relative; */
+    position: absolute;
+    /* left: 105px;
+    bottom: 29px; */
+    left: 5px;
+    bottom: 9px;
+    z-index: 3;
+}
+
+.b-right-words{
+    /* position: relative;
+    right: 115px;
+    bottom: 29px; */
+    position: absolute;
+    left: 336px;
+    bottom: 9px;
+    z-index: 3;
+}
+
+.b-logo-image{
+    width: 775px;
+    transition: all 0.6s;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    z-index: 2;
+}
+
+
+
+
+
+
+.hello-text{
+    position: absolute;
+    top: 0;
+    left: 175px;
+    transform: rotate(340deg);
+    height: 75px;
+    width: 360px;
+}

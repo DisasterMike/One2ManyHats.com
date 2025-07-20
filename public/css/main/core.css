@@ -1,7 +1,7 @@
 body {
     background-color: var(--black);
     color: var(--white-text);
-    /* font-family: var(--body-font); */
+    font-family: var(--body-font);
 
     /* background-image: url("LogoWithoutName.png");
     background-attachment: fixed;

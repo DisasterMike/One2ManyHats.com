@@ -1,4 +1,8 @@
 @import 'home/home.css';
+
 @import 'main/core.css';
 @import 'main/colours.css';
+@import 'main/fonts.css';
+
 @import 'components/navbar.css';
+@import 'components/banner.css';

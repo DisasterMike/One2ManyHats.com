@@ -3,10 +3,9 @@ import './../global.js'
 
 const homePage = async (req, res) => {
     let html = await control.serveFullPage('/pages/index.html')
+    const banner = await READ('/pages/components/home-banner.html')
 
-    // read the banner html and add it below
-
-    // html = html.replace('{{banner}}', )
+    html = html.replace('{{banner}}', banner)
     res.send(html)
 }
 

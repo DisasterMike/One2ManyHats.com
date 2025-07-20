@@ -12,16 +12,14 @@ import dayjs from 'dayjs'
 const serveFullPage = async (filePath) => {
     let html = await READ(filePath)
 
-    // TODO - set up fonts the same way i did in my last project!!!!!
-    // const fonts = await fs.promises.readFile('pages/components/fonts.html')
-    // html = html.replace('{{fonts}}', fonts)
-
+    const fonts = await READ('pages/components/fonts.html')
     const navbar = await READ('pages/components/navbar.html')
     
     let footer = await READ('pages/components/footer.html')
     const copyrightText = `One2ManyHats ${dayjs().format('YYYY')}`
     footer = footer.replace('{{copyright}}', copyrightText)
 
+    html = html.replace('{{fonts}}', fonts)
     html = html.replace('{{navbar}}', navbar)
     html = html.replace('{{footer}}', footer)
 

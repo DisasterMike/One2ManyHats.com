@@ -1,7 +1,8 @@
 :root{
     --black: rgb(15, 15, 15);
     --black-rgb: 15, 15, 15;
-    --white-text: #f7f7f7;
+    /* --white-text: #f7f7f7; */
+    --white-text: #ffffff;
     --link-hover: rgb(79, 119, 150);
     --highlight: #FCBA28;
     --grey: #c7c7c7;

@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon.ico"/>
+    <script src="javascript/home/banner.js"></script>
+    <script src="javascript/core/navbar.js"></script>
     <title>Home</title>
+    {{fonts}}
 </head>
 <body>
     {{navbar}}
     <!-- Banner Section -->
-    <div data-controller="logo-letters" class="banner">
+    <div class="banner">
         <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
-          <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 130px">
-            <div class="banner-logo flex-box f-align-end">
-              <div class="hello-text flex-box f-justify-center f-align-center">
+            <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 75px">
+            <!-- <div class="banner-logo flex-box f-align-end"> -->
+            <div class="banner-logo">
+                <div class="hello-text flex-box f-justify-center f-align-center">
                 <!-- <h3>👇🏻 <%= t("logo-click-me") %></h3> -->
                 <h3>👇🏻 Logo here</h3>
                 </div>
-                <!-- <%= render "core/logo_banner" %> -->
                 {{banner}}
             </div>
             <div class="scroll-down-arrow" style="position: relative;">
-              <!-- <%= link_to "#about" do %>
+                <!-- <%= link_to "#about" do %>
                 <i class="fa-solid fa-angle-down"></i>
-              <% end %> -->
+                <% end %> -->
             </div>
-          </div>
-          <!-- <%= render "core/home_marquee" %> -->
+            </div>
+            <!-- <%= render "core/home_marquee" %> -->
         </div>
     </div>    
 
