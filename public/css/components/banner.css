@@ -1,7 +1,8 @@
 .banner{
     /* need to fix this vh as it causes problems! */
     /* height: 90vh; */
-    height: 750px;
+    /* height: 750px; */
+    height: 830px;
     /* height: 100vh; */
     /* height: 100dvh; */
     /* height: 100lvh; */
@@ -187,6 +188,14 @@
     z-index: 2;
 }
 
+.b-logo-overlay {
+    width: 264px;
+    position: absolute;
+    top: 16px;
+    left: 130px;
+    cursor: pointer;
+    z-index: 3;
+}
 
 
 

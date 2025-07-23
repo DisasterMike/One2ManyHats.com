@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/favicon.ico"/>
     <script src="javascript/home/banner.js"></script>
@@ -16,29 +17,44 @@
     <div class="banner">
         <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
             <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 75px">
-            <!-- <div class="banner-logo flex-box f-align-end"> -->
-            <div class="banner-logo">
-                <div class="hello-text flex-box f-justify-center f-align-center">
-                <!-- <h3>👇🏻 <%= t("logo-click-me") %></h3> -->
-                <h3>👇🏻 Logo here</h3>
+                <div class="banner-logo">
+                    <div class="hello-text flex-box f-justify-center f-align-center">
+                        <h3>👇🏻 Logo here</h3>
+                    </div>
+                    {{banner}}
                 </div>
-                {{banner}}
             </div>
-            <div class="scroll-down-arrow" style="position: relative;">
-                <!-- <%= link_to "#about" do %>
-                <i class="fa-solid fa-angle-down"></i>
-                <% end %> -->
+            <div class="scroll-down-arrow flex-box f-justify-center" style="position: relative;">
+                <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
             </div>
+            <div class="home-marquee">
+                <div>
+                    <div class="marquee">
+                      <div class="flex-box">
+                        <h2>C#</h2>
+                        <h2>HTML</h2>
+                        <h2>CSS</h2>
+                        <h2>Javascript</h2>
+                        <h2>NodeJs</h2>
+                        <h2>Ruby</h2>
+                        <h2>SQL</h2>
+                        <h2>ClipStudioPaint</h2>
+                      </div>
+                    </div>
+                </div>
             </div>
             <!-- <%= render "core/home_marquee" %> -->
         </div>
     </div>    
 
     <!-- Profile Section -->
-
+    <div id="about" style="background: var(--grey-back); padding: 65px 0 0 0;"></div>
 
 
     <!-- Contact Section -->
+    <div id="contact" style="background: var(--grey-back);"></div>
+
+
     {{footer}}
     <script>
         // remove the home nav icon when on the home page

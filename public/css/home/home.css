@@ -1,0 +1,14 @@
+/* .scroll-down-arrow{
+
+} */
+
+.scroll-down-arrow i{
+    color: var(--white-text);
+    position: absolute;
+    bottom: 70px;
+    font-size: 3rem;
+}
+
+.scroll-down-arrow i:hover{
+    color: var(--highlight);
+}
