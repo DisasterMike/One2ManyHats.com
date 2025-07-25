@@ -11,7 +11,7 @@
 - add a function that finds all the {{}} sections of a the html and then reads the corresponding components and replaces them
 
 
-
+- add bobbing animation for the down arrow on the home page when hovering
 
 
 

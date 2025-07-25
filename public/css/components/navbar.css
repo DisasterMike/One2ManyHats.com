@@ -3,7 +3,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .nav-wrapper p {
@@ -39,24 +39,28 @@
     color: var(--highlight);
 }
 
-.nav-element{
+.nav-el{
     position: relative;
 }
 
-.nav-element::after {
+.nav-el::after {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 4px;
-    bottom: 8px;
+    bottom: -4px;
     left: 0;
     background-color: var(--highlight);
     transition: transform 0.25s ease-out;
 }
 
-.nav-element:hover::after {
+.nav-el:hover::after {
     transform: scaleX(1);
+}
+
+.nav-el::after{
+    transform: scaleX(0);
 }
 
 .sticking-nav{
@@ -76,10 +80,6 @@
 
 .sticking-nav p{
     display: none;
-}
-
-.sticking-nav .nav-element::after{
-    transform: scaleX(0);
 }
 
 .nav-items{

@@ -37,74 +37,76 @@
 }
 
 .l1 {
-    left: 7px;
+    left: 2px;
 }
 .l1-u {
-    left: 7px;
+    left: 2px;
 }
 .l2{
-    left: 73px;
+    left: 68px;
 }
 .l2-u {
-    left: 73px;
+    left: 68px;
 }
 .l3{
-    left: 127px;
+    left: 122px;
 }
 .l3-u {
-    left: 127px;
+    left: 122px;
 }
 .l4{
+    left: -5px;
     bottom: -1px;
 }
 .l4-u{
+    left: -5px;
     bottom: -1px;
 }
 .l5{
-    left: 84px;
+    left: 79px;
 }
 .l5-u{
-    left: 84px;
+    left: 79px;
 }
 .l6{
-    left: 135px;
+    left: 130px;
     bottom: -1px;
 }
 .l6-u{
-    left: 135px;
+    left: 130px;
     bottom: -1px;
 }
 .l7{
-    left: 189px;
+    left: 184px;
     bottom: -1px;
 }
 .l7-u{
-    left: 189px;
+    left: 184px;
     bottom: -1px;
 }
 .l8{
-    left: 237px;
+    left: 232px;
 }
 .l8-u{
-    left: 237px;
+    left: 232px;
 }
 .l9{
-    left: 304px;
+    left: 299px;
 }
 .l9-u{
-    left: 304px;
+    left: 299px;
 }
 .l10{
-    left: 354px;
+    left: 349px;
 }
 .l10-u{
-    left: 354px;
+    left: 349px;
 }
 .l11{
-    left: 385px;
+    left: 380px;
 }
 .l11-u {
-    left: 385px;
+    left: 380px;
 }
 
 
@@ -165,7 +167,7 @@
     bottom: 29px; */
     left: 5px;
     bottom: 9px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .b-right-words{
@@ -175,14 +177,12 @@
     position: absolute;
     left: 336px;
     bottom: 9px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .b-logo-image{
     width: 775px;
     transition: all 0.6s;
-    margin: 0 5px;
-    cursor: pointer;
     position: relative;
     top: 5px;
     z-index: 2;
@@ -192,7 +192,7 @@
     width: 264px;
     position: absolute;
     top: 16px;
-    left: 130px;
+    left: 125px;
     cursor: pointer;
     z-index: 3;
 }
