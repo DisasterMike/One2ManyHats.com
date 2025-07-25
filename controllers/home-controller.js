@@ -2,11 +2,13 @@ import control from './../application.controller.js'
 import './../global.js'
 
 const homePage = async (req, res) => {
-    let html = await control.serveFullPage('/pages/index.html')
-    const banner = await READ('/pages/components/home-banner.html')
+    // NOTE: for anything specific, do it BEFORE serveFullPage
+        // i.e. things created with javascript here...
 
-    html = html.replace('{{banner}}', banner)
+    let html = await control.serveFullPage('/pages/index.html')
     res.send(html)
+
+    // some are done after.. like the footer
 }
 
 export default { homePage }

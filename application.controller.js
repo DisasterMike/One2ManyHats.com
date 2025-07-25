@@ -12,19 +12,19 @@ import dayjs from 'dayjs'
 const serveFullPage = async (filePath) => {
     let html = await READ(filePath)
 
-    const fonts = await READ('pages/components/fonts.html')
-    const navbar = await READ('pages/components/navbar.html')
-    
-    let footer = await READ('pages/components/footer.html')
-    const copyrightText = `One2ManyHats ${dayjs().format('YYYY')}`
-    footer = footer.replace('{{copyright}}', copyrightText)
+    // stuff that just needs reading
+    const components = html.match(/{{.*?}}/g);
+    for (let i = 0; i < components.length; i++) {
+        const name = components[i]
+        const component = await READ(`pages/components/${name.replace(/{{/g, '').replace(/}}/g, '')}.html`)
+        html = html.replace(name, component)
+    }
 
-    html = html.replace('{{fonts}}', fonts)
-    html = html.replace('{{navbar}}', navbar)
-    html = html.replace('{{footer}}', footer)
+    const copyrightText = `One2ManyHats ${dayjs().format('YYYY')}`
+    html = html.replace('{{copyright}}', copyrightText)
 
     return html
 }
 
-export default { serveFullPage, 
+export default { serveFullPage,
     homeController, gamesController, webController, boardGamesController, aboutController }

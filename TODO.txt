@@ -7,3 +7,33 @@
 
 - add fontawesome!!
 
+
+- add a function that finds all the {{}} sections of a the html and then reads the corresponding components and replaces them
+
+
+
+
+
+
+
+
+
+
+backup...
+
+// let html = await READ(filePath)
+
+    // const fonts = await READ('pages/components/fonts.html')
+    // const navbar = await READ('pages/components/navbar.html')
+    // let footer = await READ('pages/components/footer.html')
+
+    // const copyrightText = `One2ManyHats ${dayjs().format('YYYY')}`
+    // footer = footer.replace('{{copyright}}', copyrightText)
+
+    // html = html.replace('{{fonts}}', fonts)
+    // html = html.replace('{{navbar}}', navbar)
+    // html = html.replace('{{footer}}', footer)
+
+    // return html
+
+    // ----
