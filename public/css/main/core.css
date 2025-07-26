@@ -3,11 +3,13 @@ body {
     color: var(--white-text);
     font-family: var(--body-font);
 
-    /* background-image: url("LogoWithoutName.png");
+    background-image: url("/images/page/logo-main.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 500px; */
+    background-size: 350px;
+
+    margin: 0;
 }
  
 

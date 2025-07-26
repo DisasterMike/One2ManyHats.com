@@ -4,6 +4,4 @@ const logoLettersToggle = async (img) => {
     letters.forEach(letter => {
         letter.classList.toggle("letter-buttons")
     })
-    const helloText = banner.querySelector(".hello-text")
-    helloText.innerText = ""
 }

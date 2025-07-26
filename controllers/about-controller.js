@@ -1,8 +1,10 @@
 import control from './../application.controller.js'
 
 const aboutPage = async (req, res) => {
-    const html = await control.serveFullPage('/pages/about.html')
-    res.send(html)
+    let html = await READ('/pages/about.html')
+
+    const page = await control.serveFullPage(html)
+    res.send(page)
 }
 
 export default { aboutPage }

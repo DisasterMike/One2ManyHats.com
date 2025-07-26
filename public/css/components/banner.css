@@ -1,11 +1,5 @@
 .banner{
-    /* need to fix this vh as it causes problems! */
-    /* height: 90vh; */
-    /* height: 750px; */
-    height: 830px;
-    /* height: 100vh; */
-    /* height: 100dvh; */
-    /* height: 100lvh; */
+    height: 832px;
     background-color: var(--black);
 }
 
@@ -22,9 +16,7 @@
     bottom: 0px;
 }
 
-/* dont make transparent, make it black colour so it sits over the logo */
 .b-letter.static{
-    /* -webkit-text-fill-color: transparent; */
     position: absolute;
     -webkit-text-fill-color: var(--black);
     -webkit-text-stroke-width: 3px;
@@ -161,19 +153,13 @@
 }
 
 .b-left-words{
-    /* position: relative; */
     position: absolute;
-    /* left: 105px;
-    bottom: 29px; */
     left: 5px;
     bottom: 9px;
     z-index: 4;
 }
 
 .b-right-words{
-    /* position: relative;
-    right: 115px;
-    bottom: 29px; */
     position: absolute;
     left: 336px;
     bottom: 9px;
@@ -195,17 +181,4 @@
     left: 125px;
     cursor: pointer;
     z-index: 3;
-}
-
-
-
-
-
-.hello-text{
-    position: absolute;
-    top: 0;
-    left: 175px;
-    transform: rotate(340deg);
-    height: 75px;
-    width: 360px;
 }

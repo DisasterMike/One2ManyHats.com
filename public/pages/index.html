@@ -13,54 +13,41 @@
 </head>
 <body>
     {{navbar}}
+
     <!-- Banner Section -->
      {{language-toggle}}
     <div class="banner">
-        <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
-            <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 75px">
+        <div class="flex-box f-justify-end d-flex-column" style="height: 100%;">
+            <div class="flex-box f-justify-center f-align-center d-flex-column" style="flex-grow: 1; padding-top: 100px">
                 <div class="banner-logo">
-                    <!-- <div class="hello-text flex-box f-justify-center f-align-center">
-                        <h3>👇🏻 Click here</h3>
-                    </div> -->
                     {{home-banner}}
                 </div>
             </div>
             <div class="scroll-down-arrow flex-box f-justify-center" style="position: relative;">
                 <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
             </div>
-            <div class="home-marquee">
-                <div>
-                    <div class="marquee">
-                      <div class="flex-box">
-                        <h2>C#</h2>
-                        <h2>HTML</h2>
-                        <h2>CSS</h2>
-                        <h2>Javascript</h2>
-                        <h2>NodeJs</h2>
-                        <h2>Ruby</h2>
-                        <h2>SQL</h2>
-                        <h2>ClipStudioPaint</h2>
-                      </div>
+            <div class="home-marquee-container">
+                <div class="home-marquee-text">
+                    <div class="flex-box" style="gap: 100px; padding-bottom: 16px;">
+                        {{marquee-names}}
                     </div>
                 </div>
             </div>
-            <!-- <%= render "core/home_marquee" %> -->
         </div>
-    </div>    
+    </div>  
 
-    <!-- Profile Section -->
-    <div id="about" style="background: var(--grey-back); padding: 65px 0 0 0;"></div>
-
+    <!-- Profile Section REMOVE THE HEIGHT!! -->
+    <div id="about" style="background: var(--grey-back); padding: 65px 0 0 0; height: 500px;"></div>
 
     <!-- Contact Section -->
     <div id="contact" style="background: var(--grey-back);"></div>
 
-
+    <!-- Footer Section REMOVE THE HEIGHT!! -->
     {{footer}}
+    
     <script>
         // remove the home nav icon when on the home page
         const homeNavIcon = document.querySelector('.nav-home')
-        // homeNavIcon.style.display = 'none'
         homeNavIcon.remove()
     </script>
 </body>

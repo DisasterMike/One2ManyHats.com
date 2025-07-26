@@ -4,7 +4,6 @@
 - add localization and add that to each page. i.e. navbar etc..
 
 
-
 - add fontawesome!!
 
 
@@ -12,6 +11,22 @@
 
 
 - add bobbing animation for the down arrow on the home page when hovering
+
+
+
+- for game/web page etc..
+    // create an array of objs that hold all the data
+        i.e. name, desc, images, tech stacks, link etc.
+    // then build all those in the backend.
+    // then i can just add games, and then rearrange the list whenever
+
+
+
+
+
+
+
+
 
 
 

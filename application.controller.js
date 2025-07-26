@@ -9,8 +9,8 @@ import aboutController from './controllers/about-controller.js'
 
 import dayjs from 'dayjs'
 
-const serveFullPage = async (filePath) => {
-    let html = await READ(filePath)
+const serveFullPage = async (html) => {
+    // let html = await READ(filePath)
 
     // stuff that just needs reading
     const components = html.match(/{{.*?}}/g);

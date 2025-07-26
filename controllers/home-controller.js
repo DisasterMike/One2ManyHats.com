@@ -2,11 +2,23 @@ import control from './../application.controller.js'
 import './../global.js'
 
 const homePage = async (req, res) => {
-    // NOTE: for anything specific, do it BEFORE serveFullPage
-        // i.e. things created with javascript here...
+    let html = await READ('/pages/index.html')
 
-    let html = await control.serveFullPage('/pages/index.html')
-    res.send(html)
+    const techSkills = [
+        'C#', 
+        'HTML', 
+        'CSS', 
+        'Javascript', 
+        'NodeJs', 
+        'Ruby', 
+        'SQL', 
+        'ClipStudioPaint'
+    ]
+    const techHtml = techSkills.map(i => `<h2>${i}</h2>`).join('')
+    html = html.replace(/{{marquee-names}}/g, techHtml)
+
+    const page = await control.serveFullPage(html)
+    res.send(page)
 
     // some are done after.. like the footer
 }
