@@ -26,7 +26,7 @@
             <div class="scroll-down-arrow flex-box f-justify-center" style="position: relative;">
                 <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
             </div>
-            <div class="home-marquee-container">
+            <div id="about" class="home-marquee-container">
                 <div class="home-marquee-text">
                     <div class="flex-box" style="gap: 100px; padding-bottom: 16px;">
                         {{marquee-names}}
@@ -37,7 +37,46 @@
     </div>  
 
     <!-- Profile Section REMOVE THE HEIGHT!! -->
-    <div id="about" style="background: var(--grey-back); padding: 65px 0 0 0; height: 500px;"></div>
+    <!-- removed id=about to marquee bit -->
+    <div style="background: var(--grey-back); padding: 65px 0 0 0; height: 500px;">
+
+        <div class="about-row flex-box f-justify-center">
+            <div class="about-image-box flex-box f-align-center f-justify-end">
+                <div class="about-img">
+                    <div class="img-box show" data-hobby-info-toggle-target="webPic" style="background-image: url('/images/pictures/MeDemoDay1.jpg'); background-position: center; background-size: cover;"></div>
+                    <div class="img-box" data-hobby-info-toggle-target="gamesPic" style="background-image: url('/images/pictures/me.jpg'); background-position: center; background-size: cover;"></div>
+                    <div class="img-box" data-hobby-info-toggle-target="boardPic" style="background-image: url('/images/pictures/MeAtLeWagon.jpg'); background-position: center; background-size: cover;"></div>
+                </div>
+                <div class="about-img-back"></div>
+            </div>
+            <div class="about-info box-shadow flex-box">
+                <div class="text-box flex-box">
+                    <div class="text-box-info">
+                    <div class="flex-box d-flex-column f-align-center" style="margin-bottom: 16px; text-align: center;">
+                        <h2><strong>Michael Stump</strong></h2>
+                        <!-- <h5><%= t("job-titles") %></h5> -->
+                        <h5>Job title</h5>
+                    </div>
+                    <!-- <p><%= t("about-box-text").try(:html_safe) %> -->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi repellendus tenetur quam qui earum corrupti, rerum atque? Nesciunt, molestias earum excepturi officiis at, magnam rerum architecto inventore, deserunt officia nam?
+                    </p>
+                    </div>
+                    <div class="social-icons flex-box f-justify-center d-none">
+                        <a href="https://www.linkedin.com/in/michael-a-stump/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/DisasterMike" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- add a itch.io one!!?? -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Contact Section -->
     <div id="contact" style="background: var(--grey-back);"></div>

@@ -11,7 +11,8 @@
 }
 
 .main-nav-inner{
-    padding: 0 45px;
+    /* padding: 0 45px; */
+    padding: 0 180px;
     transition: all 0.5s;
     border-radius: 24px;
 
@@ -23,6 +24,12 @@
     height: 100%;
     gap: 150px;
     transition: all 0.3s;
+    /* border-bottom: 1px solid var(--grey); */
+    border-bottom: 1px solid #535353;
+}
+
+.main-nav-inner i {
+    display: none;
 }
 
 .main-nav-inner li{
@@ -48,8 +55,8 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 4px;
-    bottom: -4px;
+    height: 2px;
+    bottom: 0px;
     left: 0;
     background-color: var(--highlight);
     transition: transform 0.25s ease-out;
