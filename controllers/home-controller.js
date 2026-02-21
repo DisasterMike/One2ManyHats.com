@@ -17,7 +17,7 @@ const homePage = async (req, res) => {
     const techHtml = techSkills.map(i => `<h2>${i}</h2>`).join('')
     html = html.replace(/{{marquee-names}}/g, techHtml)
 
-    const page = await control.serveFullPage(html)
+    const page = await control.serveFullPage(html, req)
     res.send(page)
 
     // some are done after.. like the footer

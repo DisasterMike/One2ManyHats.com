@@ -1,7 +1,7 @@
 <div class="lang-toggle flex-box f-justify-end">
     <p>English</p>
     <label data-controller="language-toggle" id="language-toggle" class="switch">
-        <input type="checkbox" data-language-toggle-target="toggle">
+        <input type="checkbox" data-language-toggle-target="toggle" onclick="changeLocalization(this)" {{language}}>
         <span class="slider round"></span>
     </label>
     <p>日本語</p>

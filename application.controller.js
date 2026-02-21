@@ -15,19 +15,32 @@ import dayjs from 'dayjs'
  * @param {*} html - current page to be loaded
  * @returns {*} formatted html with all the components added. i.e. fonts, footer, navbar etc.
  */
-const serveFullPage = async (html) => {
+const serveFullPage = async (html, req) => {
     // let html = await READ(filePath)
 
     // stuff that just needs reading
     const components = html.match(/{{.*?}}/g)
     for (let i = 0; i < components.length; i++) {
-        const name = components[i]
-        const component = await READ(`pages/components/${name.replace(/{{/g, '').replace(/}}/g, '')}.html`)
-        html = html.replace(name, component)
+        const component = components[i]
+        const componentHtml = await READ(`pages/components/${component.replace(/{{/g, '').replace(/}}/g, '')}.html`)
+        html = html.replace(component, componentHtml)
     }
 
     const copyrightText = `One2ManyHats ${dayjs().format('YYYY')}`
     html = html.replace('{{copyright}}', copyrightText)
+
+    // change the language toggle to either checked or not on load
+        // it is set to the opposite so the slider can move after page loads
+    const language = req.cookies.lang || ''
+    html = html.replace('{{language}}', language === 'jp' ? '' : 'checked')
+
+    // change text based on language settings
+    const textToLocalizeArr = html.match(/{{LOCALIZE: \w+(?:-\w+)*}}/g) || []
+    for (let i = 0; i < textToLocalizeArr.length; i++) {
+        const text = textToLocalizeArr[i]
+        const localizedText = text.match(/LOCALIZE: \w+(?:-\w+)*/)[0].split(': ')[1].localize(language)
+        html = html.replace(text, localizedText)
+    }
 
     return html
 }

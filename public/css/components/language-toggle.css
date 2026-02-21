@@ -41,8 +41,8 @@ p {
     bottom: 0;
     /* background-color: #ccc; */
     border: 1px solid var(--white-text);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .5s;
+    transition: .5s;
 
     height: 22px;
     width: 48px;
@@ -58,8 +58,8 @@ p {
     left: 3px;
     bottom: 3px;
     background-color: var(--white-text);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .5s;
+    transition: .5s;
 
     height: 16px;
     width: 16px;

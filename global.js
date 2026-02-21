@@ -52,3 +52,15 @@ global.ERR = (...args) => {
     console.log('ERR', getDatetime(), file, func, '\n---> ', ...args)
 }
 
+
+
+import enLanguageJson from './languages/en.json' with { type: 'json' }
+import jpLanguageJson from './languages/jp.json' with { type: 'json' }
+String.prototype.localize = function (langage) {
+    if (langage === 'en') {
+        return enLanguageJson[this] || this
+    } else {
+        return jpLanguageJson[this] || this
+    }
+}
+

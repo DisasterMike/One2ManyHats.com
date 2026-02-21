@@ -5,6 +5,7 @@ import os from 'os'
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import cookieParser from 'cookie-parser'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // References
@@ -15,6 +16,7 @@ const app = express()
 const port = 3000
 
 app.use(express.static(path.join(__dirname, "public")))
+app.use(cookieParser())
 
 app.get('/', async (req, res) => {
     return control.homeController.homePage(req, res)
@@ -30,6 +32,17 @@ app.get('/board-games', async (req, res) => {
 })
 app.get('/about', async (req, res) => {
     return control.aboutController.aboutPage(req, res)
+})
+
+app.get('/set-language/:lang', async (req, res) => {
+    const { lang } = req.params
+    if (!['en', 'jp'].includes(lang)) return res.sendStatus(400)
+
+    res.cookie('lang', lang, {
+        // httpOnly: true,
+        sameSite: 'strict'
+    })
+    res.sendStatus(200)
 })
 
 const getLocalIPAddress = () => {
