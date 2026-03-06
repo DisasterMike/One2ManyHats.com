@@ -35,10 +35,11 @@ const serveFullPage = async (html, req) => {
     html = html.replace('{{language}}', language === 'jp' ? '' : 'checked')
 
     // change text based on language settings
-    const textToLocalizeArr = html.match(/{{LOCALIZE: \w+(?:-\w+)*}}/g) || []
+    const textToLocalizeArr = html.match(/\[\[LOCALIZE: \w+(?:-\w+)*\]\]/g) || []
     for (let i = 0; i < textToLocalizeArr.length; i++) {
         const text = textToLocalizeArr[i]
-        const localizedText = text.match(/LOCALIZE: \w+(?:-\w+)*/)[0].split(': ')[1].localize(language)
+        let localizedText = text.match(/LOCALIZE: \w+(?:-\w+)*/)[0].split(': ')[1].localize(language)
+        if (Array.isArray(localizedText)) localizedText = localizedText.join('\n')
         html = html.replace(text, localizedText)
     }
 

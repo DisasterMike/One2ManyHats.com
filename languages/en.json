@@ -4,5 +4,22 @@
     "nav-games": "Games",
     "nav-board-games": "Board Games",
     "nav-about-me": "About Me",
-    "about-me": "About Me"
+    "about-me": "About Me",
+    "job-titles": "Full Stack Web Developer | Game Developer",
+    "about-box-text": [
+        "Hey There! I'm Michael, thanks for stopping by.<br>",
+        "I am a software engineer who loves to wear many different hats.",
+        "<br>",
+        "I specialize primarily in <span data-hobby-info-toggle-target='web'><a class='text-link web' href='#'>web development</a></span>.",
+        "Initially I was self taught, but then I went on to study full stack web development at Le Wagon, Tokyo.",
+        "<br>",
+        "<br>",
+        "In my free time I also like to make <span data-hobby-info-toggle-target='games'><a class='text-link' href='#'>video games</a></span> in Unity as a hobby.",
+        "<br>",
+        "In addition, I'm making my own <span data-hobby-info-toggle-target='board'><a class='text-link' href='#'>board games</a></span>, as well as creating my own digital art for my projects.",
+        "Feel free to check out some of my work!",
+        "<br>",
+        "<br>",
+        "I love learning and meeting new people, so feel free to reach out!"
+    ]
 }

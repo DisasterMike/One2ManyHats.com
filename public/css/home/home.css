@@ -63,6 +63,9 @@ max-width: 650px;
 .about-info .text-box-info{
     flex-grow: 1;
 }
+.about-info .text-box-info h2 {
+    margin: 0;
+}
 
 .about-info p{
     font-size: 0.9rem;

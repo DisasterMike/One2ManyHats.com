@@ -4,5 +4,22 @@
     "nav-games": "ゲーム",
     "nav-board-games": "ボードゲーム",
     "nav-about-me": "私のこと",
-    "about-me": "自己紹介"
+    "about-me": "自己紹介",
+    "job-titles": "フルスタックウェブ開発、 ゲーム開発",
+    "about-box-text": [
+        "こんにちは、マイケルと申します。よろしくお願いします。<br>",
+        "私はたくさん色んなものが好きなソフトウェアエンジニアです。",
+        "<br>",
+        "<span data-hobby-info-toggle-target='web'><a class='text-link web' href='#'>ウェブ開発</a></span>を専門とします。",
+        "最初は独学でしたが、後にLe Wagonという学校でフルスタックを勉強しました。",
+        "<br>",
+        "<br>",
+        "休みの日にはUnityで自分の<span data-hobby-info-toggle-target='games'><a class='text-link' href='#'>ビデオゲーム</a></span>を作るのも好きです。",
+        "<br>",
+        "また、オリジナルの<span data-hobby-info-toggle-target='board'><a class='text-link' href='#'>ボードゲーム</a></span>を作ったり、デジタルアートを作ったりもします。",
+        "良かったらいつでもご覧ください。",
+        "<br>",
+        "<br>",
+        "新しいスキルを学ぶのと、新しい人に会うのが大好きなので、いつでもお気軽にご連絡ください。"
+    ]
 }
