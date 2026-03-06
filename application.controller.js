@@ -32,13 +32,13 @@ const serveFullPage = async (html, req) => {
     // change the language toggle to either checked or not on load
         // it is set to the opposite so the slider can move after page loads
     const language = req.cookies.lang || ''
-    html = html.replace('{{language}}', language === 'jp' ? '' : 'checked')
+    html = html.replace('{{language}}', language === 'jp' ? '' : 'checked') // TODO - should i change the templating here????
 
     // change text based on language settings
-    const textToLocalizeArr = html.match(/\[\[LOCALIZE: \w+(?:-\w+)*\]\]/g) || []
+    const textToLocalizeArr = html.match(/\[\[t: \w+(?:-\w+)*\]\]/g) || []
     for (let i = 0; i < textToLocalizeArr.length; i++) {
         const text = textToLocalizeArr[i]
-        let localizedText = text.match(/LOCALIZE: \w+(?:-\w+)*/)[0].split(': ')[1].localize(language)
+        let localizedText = text.match(/t: \w+(?:-\w+)*/)[0].split(': ')[1].localize(language)
         if (Array.isArray(localizedText)) localizedText = localizedText.join('\n')
         html = html.replace(text, localizedText)
     }
